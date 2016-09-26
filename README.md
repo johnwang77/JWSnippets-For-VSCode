@@ -47,5 +47,5 @@ jwpicker-date | 创建picker-date组件
 
 ### 作者相关：
 ---
-简书：http://www.jianshu.com/users/bbeb5d67076e
-GitHub：https://github.com/johnwang77/JWSnippets-For-VSCode
+- 简书：http://www.jianshu.com/users/bbeb5d67076e
+- GitHub：https://github.com/johnwang77/JWSnippets-For-VSCode
