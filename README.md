@@ -10,6 +10,10 @@
 |--------|------------|---------------|
 | 2016.09.25 | 1.0 | 上传html.json |
 
+### 程序演示
+---
+![demo.gif](http://upload-images.jianshu.io/upload_images/2961518-46a377f66c376592.gif?imageMogr2/auto-orient/strip)
+
 ### 安装使用
 ---
 **1.将json文件放入vscode的sinppets目录：**
