@@ -241,5 +241,51 @@
 			"<canvas canvas-id=\"$1\"></canvas>"
 		],
 		"description": "创建canvas组件"
+	},
+	"创建block组件": {
+		"prefix": "jw - block",
+		"body": [
+			"<block wx:for=\"{{$1}}\" wx:for-index=\"index\">",
+			"	$2",
+			"</block>"
+		],
+		"description": "创建block组件"
+	},
+
+	/*
+	 *
+	 *	以下为非组件标记的代码段
+	 *
+	 */
+
+	"创建template模板": {
+		"prefix": "jw - template",
+		"body": [
+			"<template name=\"$1_tmlp\">",
+			"	$2",
+			"</template>"
+		],
+		"description": "创建template模板"
+	},
+	"创建template组件": {
+		"prefix": "jw - template is",
+		"body": [
+			"<template is=\"$1\" data=\"{{$2}}\"/>"
+		],
+		"description": "创建template组件"
+	},
+	"import wxml文件": {
+		"prefix": "jw - import wxml",
+		"body": [
+			"<import src=\"$1\"/>"
+		],
+		"description": "import wxml - 不可嵌套调用"
+	},
+	"include wxml文件": {
+		"prefix": "jw - include wxml",
+		"body": [
+			"<include src=\"$1\"/>"
+		],
+		"description": "include wxml - 可嵌套调用"
 	}
 }
