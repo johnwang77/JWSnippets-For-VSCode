@@ -1,4 +1,21 @@
 {
+	"创建App实例": {
+		"prefix": "jw - app",
+		"body": [
+			"App({",
+			"	onLaunch:function(){",
+			"		//监听小程序初始化(当小程序初始化完成时，会触发onLaunch（全局只触发一次））",
+			"	},",
+			"	onShow:function(){",
+			"		//监听小程序显示（当小程序启动，或从后台进入前台显示，会触发onShow）",
+			"	},",
+			"	onHide:function(){",
+			"		//监听小程序隐藏（当小程序从前台进入后台，会触发onHide）",
+			"	}",
+			"})"
+		],
+		"description": "创建app实例"
+	},
 	"创建Page实例": {
 		"prefix": "jw - page",
 		"body": [
@@ -182,8 +199,9 @@
 			"	sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有",
 			"	success: function (res) { // 接口调用成功的回调函数",
 			"		// 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片",
-			"		注：文件的临时路径，在小程序本次启动期间可以正常使用，如需持久保存，需在主动调用wx.saveFile，在小程序下次启动时才能访问得到。",
+			"		// 注：文件的临时路径，在小程序本次启动期间可以正常使用，如需持久保存，需在主动调用wx.saveFile，在小程序下次启动时才能访问得到。",
 			"		console.log(res.tempFilePath)",
+			"	}",
 			"})"
 		],
 		"description": "创建wx.chooseImage API 媒体-图片"
@@ -459,6 +477,20 @@
 			"wx.navigateBack()"
 		],
 		"description": "创建wx.navigateBack API 界面-导航"
+	},
+	"创建wx.hideKeyboard API 界面-键盘": {
+		"prefix": "jw - wx.hideKeyboard",
+		"body": [
+			"wx.hideKeyboard() // 收起键盘"
+		],
+		"description": "创建wx.hideKeyboard API 界面-键盘"
+	},
+	"创建wx.stopPullDownRefresh API 界面-刷新": {
+		"prefix": "jw - wx.stopPullDownRefresh",
+		"body": [
+			"wx.stopPullDownRefresh() // 停止当前页面下拉刷新"
+		],
+		"description": "创建wx.stopPullDownRefresh API 界面-刷新"
 	},
 	"创建wx.login API 登录": {
 		"prefix": "jw - wx.login",

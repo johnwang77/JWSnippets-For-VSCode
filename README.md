@@ -1,12 +1,17 @@
-# JWSnippets For VSCode
+# JWSnippets For VSCode(Wing)
 ---
 ### 引言
 专为**VSCode**开发微信小程序编写的Snippet。联系作者，欢迎提供完善代码段。
+
+`(已完美适配Wing，安装使用方法一样，Wing编译器基于VSCode开源)`
 
 ### 版本更新
 ---
 | 时间 | 版本号 | 更新内容 |
 |--------|------------|---------------|
+| 2016.09.29 | 0.0.3 | 新增js->jw - app (App实例)|
+|  |  | 新增js->jw - wx.hideKeyboard (收起键盘)|
+|  |  | 新增js->jw - wx.stopPullDownRefresh (停止当前页面下拉刷新)|
 | 2016.09.27 | 0.0.2 | 新增js.json(强化说明注释) |
 |  |  | 完善html.json |
 | 2016.09.25 | 0.0.1 | 新增html.json |
@@ -80,12 +85,14 @@ jwwxsetStorage | 创建wx.setStorage API(异步) 数据-缓存 | jwwxnavigateBac
 jwwxsetStorageSync | 创建wx.setStorageSync API(同步) 数据-缓存 | jwwxlogin | 创建wx.login API 登录
 jwwxgetStorage | 创建wx.getStorage API(异步) 数据-缓存| jwwxgetUserInfo | 创建wx.getUserInfo API 用户信息
 jwwxgetStorageSync | 创建wx.getStorageSync API(同步) 数据-缓存 | jwwxrequestPayment | 创建wx.requestPayment API 微信支付
+jwwxhideKeyboard | 创建wx.hideKeyboard API 界面-键盘 | jwwxstopPullDownRefresh | 创建wx.stopPullDownRefresh API 界面-刷新
 
 其他命令 | 命令说明 | 其他命令 | 命令说明
 ---|---|---|---
-jwpage | 创建Page实例 | jwarray | 创建数组
-jwfunction | 创建普通方法 | jwlog | 日志输出
-jwevent | 创建事件方法 | jwsetData | 同步视图层数据
+jwapp | 创建App实例 | jwarray | 创建数组
+jwpage | 创建Page实例 | jwlog | 日志输出
+jwfunction | 创建普通方法 | jwsetData | 同步视图层数据
+jwevent | 创建事件方法 |  | 
 
 ### 作者相关：
 ---
