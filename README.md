@@ -1,9 +1,11 @@
-# JWSnippets For VSCode(Wing)
----
 ### 引言
-专为**VSCode**开发微信小程序编写的Snippet。联系作者，欢迎提供完善代码段。
+---
+专为**VSCode&Wing**开发微信小程序编写的Snippet。联系作者，欢迎提供完善代码段。
+ (已完美适配Wing，安装使用方法一样，Wing编译器基于VSCode开源框架)
 
-`(已完美适配Wing，安装使用方法一样，Wing编译器基于VSCode开源)`
+### 支持IDE
+---
+> VScode、Wing 3.2以上
 
 ### 版本更新
 ---
@@ -27,10 +29,18 @@
 - Windows版本：C:\Users\用户名\AppData\Roaming\Code\User\snippets
 - Mac版本：/Users/用户名/Library/Application Support/Code/User/snippets
 
-**2.VSCode菜单->首选项->用户设置，在settings.json加入以下代码：**
+> 如果找不到上述目录，可以打开IDE菜单->首选项->用户代码片段，分别选择Javasript、HTML(或者WXML)，将下载的文件代码手动copy进去，保存即可。
 
+**2.打开IDE菜单->首选项->用户设置，在settings.json加入以下代码：**
+
+`VSCode：`
 ```
 "files.associations": { "*.wxml": "html", "*.wxss": "css"}
+```
+
+`Wing：`
+```
+"files.associations": { "*.wxss": "css"}
 ```
 
 **3.为防止和其他命令冲突，本sinppet触发命令以'jw'开头。**
